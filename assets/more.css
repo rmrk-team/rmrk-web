@@ -1,0 +1,25 @@
+.bg-dark {
+  background-color: #111 !important;
+}
+
+.text-dark {
+  color: #000 !important;
+}
+
+.bg-pink {
+  background-color: #dc127c !important;
+}
+
+.text-pink {
+  color: #dc127c !important;
+}
+
+.button-new {
+  background-color: transparent;
+  height: 4.75rem;
+  text-align: center;
+}
+
+.pb-16 {
+  padding-bottom: 4rem !important;
+}

@@ -1,0 +1,22 @@
+{
+  "description": {
+    "type": "string",
+    "description": "Description of the collection as a whole. Markdown is supported."
+  },
+  "attributes": {
+    "type": "array",
+    "description": "An Array of JSON objects, matching OpenSea's: https://docs.opensea.io/docs/metadata-standards#section-attributes"
+  },
+  "external_url": {
+    "type": "string",
+    "description": "HTTP or IPFS URL for finding out more about this project. If IPFS, MUST be in the format of ipfs://ipfs/HASH"
+  },
+  "image": {
+    "type": "string",
+    "description": "HTTP or IPFS URL to project's main image, in the vein of og:image. If IPFS, MUST be in the format of ipfs://ipfs/HASH"
+  },
+  "image_data": {
+    "type": "string?",
+    "description": "[OPTIONAL] Use only if you don't have the image field (they are mutually exclusive and image takes precedence). Raw base64 or SVG data for the image. If SVG, MUST start with <svg, if base64, MUST start with base64:"
+  }
+}

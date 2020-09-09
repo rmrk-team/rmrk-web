@@ -1,0 +1,30 @@
+{
+  "version": {
+    "type": "string",
+    "description": "Version information on RMRK standard used, e.g. RMRK0.1"
+  },
+  "name": {
+    "type": "string",
+    "description": "Name of the collection."
+  },
+  "max": {
+    "type": "number",
+    "description": "How many NFTs will ever belong to this collection. 0 for infinite."
+  },
+  "issuer": {
+    "type": "string",
+    "description": "Hex key of issuer's address, e.g. for address CpjsLDC1JFyrhm3ftC9Gs4QoyrkHKhZKtK7YqGTRFtTafgp it would be 0x0aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b"
+  },
+  "symbol": {
+    "type": "string",
+    "description": "Ticker symbol by which to represent the token in wallets and UIs, e.g. ZOMB"
+  },
+  "id": {
+    "type": "string",
+    "description": "A collection is uniquely identified by the first four and last four bytes of the issuer's pubkey and the symbol. This prevents anyone but the issuer from reusing the symbol, and prevents trading of fake NFTs with the same symbol. Example ID: 0aff6865bed3a66b-ZOMB"
+  },
+  "metadata": {
+    "type": "string",
+    "description": "HTTP(s) or IPFS URI. If IPFS, MUST be in the format of ipfs://ipfs/HASH"
+  }
+}

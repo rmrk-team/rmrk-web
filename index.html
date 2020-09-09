@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>RMRK.app - a remarkable experiment</title>
+    <meta
+      name="description"
+      content="RMRK.app is an NFT factory forcibly hacked into Kusama's blockchain"
+    />
+    <meta name="theme-color" content="FDF767" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@bitfalls" />
+    <meta name="twitter:creator" content="@bitfalls" />
+    <meta
+      name="twitter:title"
+      content="RMRK.app is an NFT factory forcibly hacked into Kusama's blockchain"
+    />
+    <meta
+      name="twitter:description"
+      content="RMRK.app is an NFT factory forcibly hacked into Kusama's blockchain"
+    />
+    <meta name="twitter:image" content="assets/twitter-large.jpg" />
+    <meta property="og:title" content="RMRK.app - a remarkable experiment" />
+    <meta
+      property="og:description"
+      content="RMRK.app is an NFT factory forcibly hacked into Kusama's blockchain"
+    />
+    <meta property="og:image" content="assets/twitter-large.jpg" />
+    <meta property="og:url" content="https://rmrk.app" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" sizes="32x32" />
+
+    <link href="assets/css.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/tailwind.css" />
+    <link rel="stylesheet" href="assets/site.css" />
+  </head>
+  <body
+    class="body overflow-x-hidden bg-pink antialaised text-pink text-lg font-mono leading-normal"
+    x-bind:class="{ &#39;cursor-watch&#39;: waiting }"
+  >
+    <img
+      src="assets/canary-12.svg"
+      class="absolute rad-head left-0 z-10 cursor-pointer"
+      id="head-left"
+      alt="Kusama canary facing left"
+    />
+    <div class="bg-dark mx-4 mb-4 lg:mb-16 lg:mx-12 xl:mx-16 relative">
+      <header class="max-w-lg px-2 mx-auto py-20">
+        <img src="assets/stuff-11.svg" alt="Radical Design Logo" />
+        <div
+          class="bg-pink mt-4 lg:mt-0 leading-none w-full text-center p-1 -rotate-3 text-3xl font-hand text-dark"
+        >
+          Mint NFTs like a pro.
+        </div>
+
+        <p class="mt-16 text-xl">
+          No native NFTs on Kusama? No problem! With RMRK, we hacked around
+          silly things like <em>protocol limitations</em> and
+          <em>common sense</em>!
+        </p>
+      </header>
+
+      <div
+        class="max-w-lg mx-auto relative text-center button button-new"
+        onclick="alert('Coming soon!');"
+      >
+        <h2
+          class="font-headline text-5xl text-pink relative mb-6 hover:text-blue cursor-pointer"
+        >
+          <svg
+            class="hidden md:block absolute flip-x"
+            style="top: 16px; left: 80px"
+            height="48"
+            viewBox="0 0 53 48"
+            width="53"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="a" fill="#fff">
+              <path
+                d="m.17475817.27413234h37.42660033v12.19582716h-37.42660033z"
+                fill="#fff"
+                fill-rule="evenodd"
+              ></path>
+            </mask>
+            <mask id="b" fill="#fff">
+              <path
+                d="m.25128979.46100011h28.61193941v4.53899989h-28.61193941z"
+                fill="#fff"
+                fill-rule="evenodd"
+              ></path>
+            </mask>
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              transform="matrix(.98768834 .15643447 -.15643447 .98768834 3.295622 -6.242316)"
+            >
+              <path
+                d="m37.8310122.7109098c-7.0889903 2.62360682-37.83009396 14.1901706-37.30590291 21.5249228.57675616.5746187 1.46671283.5287946 2.04857949.0007274 5.08786547-4.8828036 11.46941692-8.0424787 17.72685632-11.1606939 5.925257-2.92764558 12.0293814-5.52506725 18.2546977-7.74789577 1.6901145-.45896753.9702644-3.1109416-.7242306-2.61706053"
+                fill="currentColor"
+              ></path>
+              <g fill="currentColor">
+                <path
+                  d="m36.1149849.27596111c-9.9724906.81322222-20.0969811 1.8655-29.17969811 6.4155-1.91720754 1.59683333-7.42003773 1.937-6.69516981 5.06638889.42086793.7222222 1.28626415.8890556 1.99464151.5279444 6.17607547-3.1799444 12.57656601-6.2024444 19.47392451-7.34355551 5.0489812-1.16205556 10.5812076-.67816667 15.4631321-2.09805556.9363774-.87388889.2344528-2.63466666-1.0568302-2.56822222"
+                  mask="url(#a)"
+                  transform="translate(14.861143 17.269316)"
+                ></path>
+                <path
+                  d="m7.8452975 3.88864286c-.0986.015-.196475.02785714-.295075.04071428.0986-.01357143.196475-.02714285.295075-.04071428m7.90105-3.39c-2.059-.30571429-21.7181 1.25571428-13.49515 4.50142857 8.502075-2.69642857 17.80745-.78071429 26.225425-1.41714286 2.799225-4.28214286-10.4429-2.66-12.730275-3.08428571"
+                  mask="url(#b)"
+                  transform="translate(17.185421 43.619176)"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          GO TO APP
+          <svg
+            class="hidden md:block absolute"
+            style="top: 16px; right: 80px"
+            height="48"
+            viewBox="0 0 53 48"
+            width="53"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="a" fill="#fff">
+              <path
+                d="m.17475817.27413234h37.42660033v12.19582716h-37.42660033z"
+                fill="#fff"
+                fill-rule="evenodd"
+              ></path>
+            </mask>
+            <mask id="b" fill="#fff">
+              <path
+                d="m.25128979.46100011h28.61193941v4.53899989h-28.61193941z"
+                fill="#fff"
+                fill-rule="evenodd"
+              ></path>
+            </mask>
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              transform="matrix(.98768834 .15643447 -.15643447 .98768834 3.295622 -6.242316)"
+            >
+              <path
+                d="m37.8310122.7109098c-7.0889903 2.62360682-37.83009396 14.1901706-37.30590291 21.5249228.57675616.5746187 1.46671283.5287946 2.04857949.0007274 5.08786547-4.8828036 11.46941692-8.0424787 17.72685632-11.1606939 5.925257-2.92764558 12.0293814-5.52506725 18.2546977-7.74789577 1.6901145-.45896753.9702644-3.1109416-.7242306-2.61706053"
+                fill="currentColor"
+              ></path>
+              <g fill="currentColor">
+                <path
+                  d="m36.1149849.27596111c-9.9724906.81322222-20.0969811 1.8655-29.17969811 6.4155-1.91720754 1.59683333-7.42003773 1.937-6.69516981 5.06638889.42086793.7222222 1.28626415.8890556 1.99464151.5279444 6.17607547-3.1799444 12.57656601-6.2024444 19.47392451-7.34355551 5.0489812-1.16205556 10.5812076-.67816667 15.4631321-2.09805556.9363774-.87388889.2344528-2.63466666-1.0568302-2.56822222"
+                  mask="url(#a)"
+                  transform="translate(14.861143 17.269316)"
+                ></path>
+                <path
+                  d="m7.8452975 3.88864286c-.0986.015-.196475.02785714-.295075.04071428.0986-.01357143.196475-.02714285.295075-.04071428m7.90105-3.39c-2.059-.30571429-21.7181 1.25571428-13.49515 4.50142857 8.502075-2.69642857 17.80745-.78071429 26.225425-1.41714286 2.799225-4.28214286-10.4429-2.66-12.730275-3.08428571"
+                  mask="url(#b)"
+                  transform="translate(17.185421 43.619176)"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </h2>
+      </div>
+
+      <div class="px-4">
+        <div class="max-w-lg mx-auto mt-16 text-xl content">
+          <h2>What is RMRK.app?</h2>
+          <p>
+            RMRK.app is a way to
+            <em>abuse Kusama's system.remark extrinsic</em>
+            <b
+              ><a
+                href="https://wiki.polkadot.network/docs/en/glossary#extrinsic"
+                class="border-0"
+                >(?)</a
+              ></b
+            >
+            to write custom notes onto the chain in a
+            <em>standardized and structured way</em>.
+          </p>
+          <p>
+            Native NFTs are coming to Kusama through projects like
+            <a href="https://moonbeam.network">Moonbeam</a> and
+            <a href="https://devpost.com/software/unique-network">Unique</a>.
+            But we want NFTs <b>NOW</b>.
+          </p>
+          <p>
+            Each NFT is part of a collection. Each collection and each member
+            NFT have some defined fields and metadata that can enrich their
+            look, feel, and uniqueness.
+          </p>
+          <p>
+            Because the <code>system.remark</code> is being abused to make this
+            possible, extra care needs to be taken to properly read chain state
+            and process only valid RMRK NFTs. More info in the
+            <a href="#standards">standards section below</a>.
+          </p>
+          <h2>Is it live?</h2>
+          <p>
+            Sure, but consider it "alpha". Sign up to the newsletter below to be
+            notified when we launch new NFTs, new standards, and new tools to
+            interact with them.
+          </p>
+        </div>
+      </div>
+      <iframe
+        src="https://dotleap.substack.com/embed"
+        width="100%"
+        height="320"
+        style="border: 1px solid #111; background: lightyellow; margin: auto"
+        frameborder="0"
+        scrolling="no"
+      ></iframe>
+
+      <div class="px-4">
+        <div class="max-w-lg mx-auto mt-16 text-xl content">
+          <h2>Standards</h2>
+          <p>
+            Standards exist to formalize the shape and form of remark-based
+            NFTs. They're simple JSON structures written according to some
+            rules. Here's an example collection and an example NFT in that
+            collection.
+          </p>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="max-w-3xl mx-auto flex flex-wrap content py-16 lg:px-8">
+          <div class="w-full md:w-1/2 mb-8">
+            <h2 class="text-center font-headline text-5xl mb-4">
+              NFT Collection
+            </h2>
+            <div
+              class="bg-white border shadow-button px-3 py-6 md:p-6 lg:h-full mx-5"
+            >
+              <p>Collection Definition</p>
+              <pre style="overflow-x: scroll">
+{
+  "version": "RMRK0.1",
+  "name": "Dot Leap Early Promoters",
+  "max": 100,
+  "issuer": "0x0aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b",
+  "symbol": "DLEP",
+  "id": "0aff6865bed3a66b-DLEP",
+  "metadata": "ipfs://ipfs/QmVgs8P4awhZpFXhkkgnCwBp4AdKRj3F9K58mCZ6fxvn3j"
+}
+              </pre>
+              <p>Collection Metadata</p>
+              <pre style="overflow-x: scroll">
+{
+  "description": "Everyone who promoted [Dot Leap](https://dotleap.substack.com) via the in-email Tweet link is eligible.",
+  "attributes": [],
+  "external_url": "https://rmrk.app/registry/0aff6865bed3a66b-DLEP",
+  "image": "ipfs://ipfs/QmYcWFQCY1bAZ7ffRggt367McMN5gyZjXtribj5hzzeCWQ"
+}
+              </pre>
+            </div>
+          </div>
+          <div class="w-full md:w-1/2 mb-8">
+            <h2 class="text-center font-headline text-5xl mb-4">NFT</h2>
+            <div
+              class="bg-white border shadow-button px-3 py-6 md:p-6 lg:h-full mx-5"
+            >
+              <p>NFT Edition 15 Definition</p>
+              <pre style="overflow-x: scroll">
+{
+  "collection": "0aff6865bed3a66b-DLEP",
+  "name": "DL15",
+  "transferable": 1,
+  "id": "0aff6865bed3a66b-DLEP-DL15-0000000000000001",
+  "metadata": "ipfs://ipfs/QmavoTVbVHnGEUztnBT2p3rif3qBPeCfyyUE5v4Z7oFvs4"
+}
+              </pre>
+              <p>NFT Edition 15 Metadata</p>
+              <pre style="overflow-x: scroll">
+{
+    "external_url": "https://rmrk.app/registry/0aff6865bed3a66b-DLEP",
+    "image": "ipfs://ipfs/QmSY3VzdNdAphEs51GW9QMAUotaX3Rf6WeGQkvPPVhEQ3B",
+    "description": "Everyone who promoted Dot Leap via the in-email link in edition 15",
+    "name": "DL15",
+    "attributes": [],
+    "background_color": "ffffff"
+}
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div
+          class="right-0 left-0 absolute -ml-8 lg:-ml-12 xl:-ml-16 hidden md:block"
+        ></div>
+      </div>
+
+      <div class="px-4">
+        <div class="max-w-lg mx-auto content md:mt-8 pb-16">
+          <h3>Collection and NFT Standards</h3>
+          <p>
+            The definitions above are based on the RMRK0.1 standard. You can see
+            this version of the standard
+            <a href="https://github.com/swader/rmrk/standards/rmrk0.1"
+              >on Github</a
+            >, or below.
+            <span class="text-yellow">NFTs are part of collections</span>. A
+            game called "Zombie collector" can have different NFTs inside it,
+            like "Blue Zombie", "Red Zombie", etc. The "Garmin" sports watch app
+            can have different badges like "Midnight runner", "Long distance
+            swimmer", etc. Collections can also be used to sub-group NFTs:
+            "Garmin - Swimming", "Garmin - Running" and each collection can have
+            its own issuer.
+          </p>
+          <dl>
+            <dt>
+              <a href="/standards/rmrk0.1/coll.json" class="border-0"
+                >Collection standard (click for JSON)</a
+              >
+            </dt>
+            <dd class="pb-16">
+              To issue an NFT, an issuer first needs to
+              <span class="text-yellow">declare a collection</span>. A
+              collection has basic attributes like the standard version used, so
+              tools know how to process the NFTs, the issuer, ID, and maximum
+              number of NFTs ever to be minted in that collection, total.
+              Additionally, it can contain a link to its metadata which can
+              contain an image, attributes, URL, and description. Think of a
+              collection as a <em class="text-yellow">box of badges</em> labeled
+              "My Boy Scout badges".
+            </dd>
+            <dt>
+              <a href="/standards/rmrk0.1/nft.json" class="border-0"
+                >NFT standard (click for JSON)</a
+              >
+            </dt>
+            <dd class="pb-16">
+              Once a collection has been issued, the issuer can mint NFTs inside
+              that collection.
+              <span class="text-yellow">Each NFT is unique</span>. The NFT
+              instance definition contains its own attributes like name, whether
+              or not it's transferable, and a link to metadata. Think of an NFT
+              like a badge in a box labeled "My Boy Scout badges".
+            </dd>
+
+            <dt>
+              <a href="/standards/rmrk0.1/coll-meta.json" class="border-0"
+                >Collection Metadata standard (click for JSON)</a
+              >
+            </dt>
+            <dd class="pb-16">
+              <p>
+                A collection can have metadata in an off-chain location,
+                preferably on IPFS. The metadata contains a description, an
+                image, an external URL on which to learn more, and possibly
+                attributes - descriptors that add uniqueness and rarity to NFTs.
+                <a
+                  target="_blank"
+                  href="https://ipfs.io/ipfs/QmVgs8P4awhZpFXhkkgnCwBp4AdKRj3F9K58mCZ6fxvn3j?filename=coll-meta.json"
+                  >Live example</a
+                >
+              </p>
+            </dd>
+
+            <dt>
+              <a href="/standards/rmrk0.1/nft-meta.json" class="border-0"
+                >NFT Metadata standard (click for JSON)</a
+              >
+            </dt>
+            <dd class="pb-16">
+              <p>
+                An NFT can (and should!) have metadata in an off-chain location,
+                preferably on IPFS. The metadata contains a description, an
+                image, an external URL on which to learn more, and possibly
+                attributes - descriptors that add uniqueness and rarity to NFTs.
+                It can also contain animation and YouTube video links for more
+                meta info about the NFT.
+                <a
+                  target="_blank"
+                  href="https://ipfs.io/ipfs/QmavoTVbVHnGEUztnBT2p3rif3qBPeCfyyUE5v4Z7oFvs4?filename=nft15-meta.json"
+                  >Live example</a
+                >
+              </p>
+            </dd>
+          </dl>
+
+          <h3>Transaction Standards</h3>
+          <p>
+            Transactions have their own extremely simple standard. Tools are
+            expected to recognize this standard, and discard abuse attempts. For
+            example, no one is stopping a random user from crafting a
+            transaction that makes it seem like they sent someone an NFT they do
+            not own. The TX standard is there to formalize transfers according
+            to data in the NFTs and their Collections.
+          </p>
+          <dl>
+            <dt>
+              <a class="border-0" href="">Send NFT (click for live example)</a>
+            </dt>
+            <dd class="pb-16">
+              The format of a Send NFT transaction is
+              <code class="text-yellow"
+                >0x{bytes(rmrk::{version}::{id}::{recipient})}</code
+              >. For example:
+              <pre style="overflow-x: scroll" class="text-yellow"><code 
+                >rmrk::rmrk0.1::0aff6865bed3a66b-DLEP-DL15-0000000000000001::H9eSvWe34vQDJAWckeTHWSqSChRat8bgKHG39GC1fjvEm7y</code
+              ></pre>
+              would become
+              <pre style="overflow-x: scroll" class="text-yellow"><code 
+                >0x726d726b3a3a726d726b302e313a3a306166663638363562656433613636622d444c45502d444c31352d303030303030303030303030303030313a3a4839655376576533347651444a4157636b6554485753715343685261743862674b48473339474331666a76456d3779</code></pre>
+            </dd>
+            <dt>
+              <a
+                class="border-0"
+                target="_blank"
+                href="https://polkascan.io/kusama/transaction/0x81319f39b0e37296ba95fa63380e0e839997f51c98ffaabfb77e40e165610641"
+                >Mint Collection (click for live example)</a
+              >
+            </dt>
+            <dd class="pb-16">
+              The format of a Mint Collection transaction is
+              <code class="text-yellow"
+                >0x{bytes(rmrk::{html_encoded_json})}</code
+              >. In other words, HTML encode the minified JSON, then convert the
+              entire remark into bytes and send with a
+              <code class="text-yellow">0x</code> prefix. For example:
+              <pre style="overflow-x: scroll" class="text-yellow"><code 
+                >rmrk::%7B%22version%22%3A%22RMRK0.1%22%2C%22name%22%3A%22Dot+Leap+Early+Promoters%22%2C%22max%22%3A100%2C%22issuer%22%3A%220x0aff6865635ae11013a83835c019d44ec3f865145943f487ae82a8e7bed3a66b%22%2C%22symbol%22%3A%22DLEP%22%2C%22id%22%3A%220aff6865bed3a66b-DLEP%22%2C%22metadata%22%3A%22ipfs%3A%2F%2Fipfs%2FQmVgs8P4awhZpFXhkkgnCwBp4AdKRj3F9K58mCZ6fxvn3j%22%7D</code
+              ></pre>
+              would become
+              <pre style="overflow-x: scroll" class="text-yellow"><code 
+                >0x726d726b3a3a25374225323276657273696f6e253232253341253232524d524b302e312532322532432532326e616d65253232253341253232446f742b4c6561702b4561726c792b50726f6d6f746572732532322532432532326d617825323225334131303025324325323269737375657225323225334125323230783061666636383635363335616531313031336138333833356330313964343465633366383635313435393433663438376165383261386537626564336136366225323225324325323273796d626f6c253232253341253232444c45502532322532432532326964253232253341253232306166663638363562656433613636622d444c45502532322532432532326d657461646174612532322533412532326970667325334125324625324669706673253246516d5667733850346177685a704658686b6b676e437742703441644b526a3346394b35386d435a366678766e336a253232253744</code></pre>
+            </dd>
+            <dt>
+              <a
+                class="border-0"
+                target="_blank"
+                href="https://polkascan.io/kusama/transaction/0x4440131ad99192e0f062df1cf0b84806ec91772cef794fa1cb10722c205b98b4"
+                >Mint NFT (click for live example)</a
+              >
+            </dt>
+            <dd class="pb-16">
+              The format of a Mint NFT transaction is the same as for
+              Collections:
+              <code class="text-yellow"
+                >0x{bytes(rmrk::{html_encoded_json})}</code
+              >. For example:
+              <pre style="overflow-x: scroll" class="text-yellow"><code 
+                >rmrk::%7B%22collection%22%3A%220aff6865bed3a66b-DLEP%22%2C%22name%22%3A%22DL15%22%2C%22transferable%22%3A1%2C%22id%22%3A%220aff6865bed3a66b-DLEP-DL15-0000000000000001%22%2C%22metadata%22%3A%22ipfs%3A%2F%2Fipfs%2FQmavoTVbVHnGEUztnBT2p3rif3qBPeCfyyUE5v4Z7oFvs4%22%7D</code
+              ></pre>
+              would become
+              <pre style="overflow-x: scroll" class="text-yellow"><code 
+                >0x726d726b3a3a253742253232636f6c6c656374696f6e253232253341253232306166663638363562656433613636622d444c45502532322532432532326e616d65253232253341253232444c31352532322532432532327472616e7366657261626c65253232253341312532432532326964253232253341253232306166663638363562656433613636622d444c45502d444c31352d303030303030303030303030303030312532322532432532326d657461646174612532322533412532326970667325334125324625324669706673253246516d61766f54566256486e4745557a746e425432703372696633714250654366797955453576345a376f46767334253232253744</code></pre>
+            </dd>
+          </dl>
+
+          <h3>FAQ</h3>
+          <h4>Isn't this expensive?</h4>
+          <p>
+            A single send transaction costs around
+            <code class="text-yellow">0.005 KSM</code>, with a mint transaction
+            going up to <code class="text-yellow">0.01 KSM</code> maximum in our
+            current experiments. There's room for optimizing these costs further
+            in future iterations of the standards.
+          </p>
+          <h4>Is this serious?</h4>
+          <p>
+            It's as serious as people want to take it. It was built as an
+            experiment and hobby project for
+            <a href="https://dotleap.com">DotLeap.com</a>, but if it gets a life
+            of its own, great!
+          </p>
+          <h4>Any roadmap?</h4>
+          <p>Sure:</p>
+          <ul>
+            <li>
+              September 2020: App goes live so everyone can use RMRK
+              <b class="text-yellow">easily</b>.
+            </li>
+            <li>
+              October 2020: <span class="text-yellow">Tool suite</span> goes
+              live, for easy querying, indexing, minting, and sending NFTs.
+            </li>
+            <li>November 2020: We'll see.</li>
+          </ul>
+          <h4>Any token sale?</h4>
+          <p>
+            Lol,
+            <a
+              href="https://ipfs.io/ipfs/QmZKaEGKxz136DFjS5L8b3rQQv9FcQfQqNnLWWVSmSNwtU?filename=6297e6338236ae7c63918500cfd1a647.jpg"
+              >nope</a
+            >.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark text-white py-32 relative px-4">
+      <div class="max-w-lg mx-auto mb-24 md:mb-48 relative text-center">
+        <h2
+          class="font-headline text-5xl text-pink relative mb-6 hover:text-blue cursor-pointer"
+        >
+          <svg
+            class="hidden md:block absolute flip-x"
+            style="top: 16px; left: 80px"
+            height="48"
+            viewBox="0 0 53 48"
+            width="53"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="a" fill="#fff">
+              <path
+                d="m.17475817.27413234h37.42660033v12.19582716h-37.42660033z"
+                fill="#fff"
+                fill-rule="evenodd"
+              ></path>
+            </mask>
+            <mask id="b" fill="#fff">
+              <path
+                d="m.25128979.46100011h28.61193941v4.53899989h-28.61193941z"
+                fill="#fff"
+                fill-rule="evenodd"
+              ></path>
+            </mask>
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              transform="matrix(.98768834 .15643447 -.15643447 .98768834 3.295622 -6.242316)"
+            >
+              <path
+                d="m37.8310122.7109098c-7.0889903 2.62360682-37.83009396 14.1901706-37.30590291 21.5249228.57675616.5746187 1.46671283.5287946 2.04857949.0007274 5.08786547-4.8828036 11.46941692-8.0424787 17.72685632-11.1606939 5.925257-2.92764558 12.0293814-5.52506725 18.2546977-7.74789577 1.6901145-.45896753.9702644-3.1109416-.7242306-2.61706053"
+                fill="currentColor"
+              ></path>
+              <g fill="currentColor">
+                <path
+                  d="m36.1149849.27596111c-9.9724906.81322222-20.0969811 1.8655-29.17969811 6.4155-1.91720754 1.59683333-7.42003773 1.937-6.69516981 5.06638889.42086793.7222222 1.28626415.8890556 1.99464151.5279444 6.17607547-3.1799444 12.57656601-6.2024444 19.47392451-7.34355551 5.0489812-1.16205556 10.5812076-.67816667 15.4631321-2.09805556.9363774-.87388889.2344528-2.63466666-1.0568302-2.56822222"
+                  mask="url(#a)"
+                  transform="translate(14.861143 17.269316)"
+                ></path>
+                <path
+                  d="m7.8452975 3.88864286c-.0986.015-.196475.02785714-.295075.04071428.0986-.01357143.196475-.02714285.295075-.04071428m7.90105-3.39c-2.059-.30571429-21.7181 1.25571428-13.49515 4.50142857 8.502075-2.69642857 17.80745-.78071429 26.225425-1.41714286 2.799225-4.28214286-10.4429-2.66-12.730275-3.08428571"
+                  mask="url(#b)"
+                  transform="translate(17.185421 43.619176)"
+                ></path>
+              </g>
+            </g>
+          </svg>
+          By
+          <svg
+            class="hidden md:block absolute"
+            style="top: 16px; right: 80px"
+            height="48"
+            viewBox="0 0 53 48"
+            width="53"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <mask id="a" fill="#fff">
+              <path
+                d="m.17475817.27413234h37.42660033v12.19582716h-37.42660033z"
+                fill="#fff"
+                fill-rule="evenodd"
+              ></path>
+            </mask>
+            <mask id="b" fill="#fff">
+              <path
+                d="m.25128979.46100011h28.61193941v4.53899989h-28.61193941z"
+                fill="#fff"
+                fill-rule="evenodd"
+              ></path>
+            </mask>
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              transform="matrix(.98768834 .15643447 -.15643447 .98768834 3.295622 -6.242316)"
+            >
+              <path
+                d="m37.8310122.7109098c-7.0889903 2.62360682-37.83009396 14.1901706-37.30590291 21.5249228.57675616.5746187 1.46671283.5287946 2.04857949.0007274 5.08786547-4.8828036 11.46941692-8.0424787 17.72685632-11.1606939 5.925257-2.92764558 12.0293814-5.52506725 18.2546977-7.74789577 1.6901145-.45896753.9702644-3.1109416-.7242306-2.61706053"
+                fill="currentColor"
+              ></path>
+              <g fill="currentColor">
+                <path
+                  d="m36.1149849.27596111c-9.9724906.81322222-20.0969811 1.8655-29.17969811 6.4155-1.91720754 1.59683333-7.42003773 1.937-6.69516981 5.06638889.42086793.7222222 1.28626415.8890556 1.99464151.5279444 6.17607547-3.1799444 12.57656601-6.2024444 19.47392451-7.34355551 5.0489812-1.16205556 10.5812076-.67816667 15.4631321-2.09805556.9363774-.87388889.2344528-2.63466666-1.0568302-2.56822222"
+                  mask="url(#a)"
+                  transform="translate(14.861143 17.269316)"
+                ></path>
+                <path
+                  d="m7.8452975 3.88864286c-.0986.015-.196475.02785714-.295075.04071428.0986-.01357143.196475-.02714285.295075-.04071428m7.90105-3.39c-2.059-.30571429-21.7181 1.25571428-13.49515 4.50142857 8.502075-2.69642857 17.80745-.78071429 26.225425-1.41714286 2.799225-4.28214286-10.4429-2.66-12.730275-3.08428571"
+                  mask="url(#b)"
+                  transform="translate(17.185421 43.619176)"
+                ></path>
+              </g>
+            </g>
+          </svg>
+        </h2>
+      </div>
+      <div class="max-w-2xl mx-auto">
+        <div class="flex flex-wrap mb-24 md:mb-48">
+          <blockquote
+            class="relative z-10 md:order-last leading-relaxed mb-8 md:mt-16 text-2xl md:text-3xl flex-1 -rotate-3"
+          >
+            I like to
+            <span class="font-headline text-yellow">experiment</span> with
+            dragging Web2 devs by force into Web3, and by building things for
+            modern blockchains. See my sideprojects over at
+            <a href="https://github.com/swader" class="font-headline text-pink"
+              >Github</a
+            >.
+          </blockquote>
+          <div class="block w-full md:w-64">
+            <img
+              src="assets/bruno.png"
+              alt="Bruno's head"
+              width="250"
+              class="wiggle"
+            />
+            <a
+              href="https://bruno.id"
+              class="block text-3xl italic font-bold mt-4 leading-none text-pink hover:text-white"
+              >Bruno Škvorc</a
+            >
+            <a href="https://twitter.com/bitfalls" class="quote-title"
+              >@bitfalls</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-32 pb-32 md:pb-16 text-center relative text-yellow">
+      <p class="text-sm">
+        An experiment by
+        <a
+          style="text-decoration: underline"
+          href="https://twitter.com/bitfalls"
+          class="hover:underline"
+          >Bruno Skvorc</a
+        >
+      </p>
+      <p class="text-xs mt-1 opacity-50">
+        <a class="hover:underline" href="https://usefathom.com/ref/HXIH9J"
+          >Fathom is watching you browse</a
+        >.
+      </p>
+    </div>
+
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script
+      src="https://cdn.usefathom.com/script.js"
+      site="BTYUYUUE"
+      defer
+    ></script>
+    <!-- / Fathom -->
+  </body>
+</html>

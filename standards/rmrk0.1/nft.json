@@ -1,0 +1,26 @@
+{
+  "collection": {
+    "type": "string",
+    "description": "Collection ID, e.g. 0aff6865bed3a66b-ZOMB"
+  },
+  "name": {
+    "type": "string",
+    "description": "Name of the NFT. Specific to NFT instance. E.g. Blue Zombie, Red Zombie."
+  },
+  "instance": {
+    "type": "string",
+    "description": "Instance ID, e.g. ZOMBBLUE"
+  },
+  "transferable": {
+    "type": "number",
+    "description": "If 1, item is transferable. If 0, item is not transferable (i.e. reputation token). If anything else, item will be transferable from that BLOCK onward, e.g. 1400000 means item can be traded after block 1400000."
+  },
+  "id": {
+    "type": "string",
+    "description": "An NFT is uniquely identified by the combination of its collection ID, its instance ID, and its issuance number, e.g. 0aff6865bed3a66b-ZOMB-ZOMBBLUE-0000000000000001. The number suffix MUST be padded so that its total length is 16, e.g. -0000000000000123"
+  },
+  "metadata": {
+    "type": "string",
+    "description": "HTTP(s) or IPFS URI. If IPFS, MUST be in the format of ipfs://ipfs/HASH"
+  }
+}

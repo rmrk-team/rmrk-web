@@ -1,0 +1,38 @@
+{
+  "external_url": {
+    "type": "string",
+    "description": "HTTP or IPFS URL for finding out more about this project. If IPFS, MUST be in the format of ipfs://ipfs/HASH"
+  },
+  "image": {
+    "type": "string",
+    "description": "HTTP or IPFS URL to project's main image, in the vein of og:image. If IPFS, MUST be in the format of ipfs://ipfs/HASH"
+  },
+  "image_data": {
+    "type": "string?",
+    "description": "[OPTIONAL] Use only if you don't have the image field (they are mutually exclusive and image takes precedence). Raw base64 or SVG data for the image. If SVG, MUST start with <svg, if base64, MUST start with base64:"
+  },
+  "description": {
+    "type": "string",
+    "description": "Description of the collection as a whole. Markdown is supported."
+  },
+  "name": {
+    "type": "string",
+    "description": "Name of the NFT instance. If NAME is present in on-chain, it takes precedence over this one."
+  },
+  "attributes": {
+    "type": "array",
+    "description": "An Array of JSON objects, matching OpenSea's: https://docs.opensea.io/docs/metadata-standards#section-attributes"
+  },
+  "background_color": {
+    "type": "string",
+    "description": "Background color of the item. Must be a six-character hexadecimal without #."
+  },
+  "animation_url": {
+    "type": "string",
+    "description": "HTTP or IPFS URL (format MUST be ipfs://ipfs/HASH) for an animated image of the item. GLTF, GLB, WEBM, MP4, M4V, and OGG are supported, and when using IPFS type MUST be appended, separated by colon, e.g. ipfs://ipfs/SOMEHASH:webm."
+  },
+  "youtube_url": {
+    "type": "string",
+    "description": "URL to Youtube video about this NFT"
+  }
+}

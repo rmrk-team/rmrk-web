@@ -1,0 +1,12 @@
+{
+  "name": "RMRK",
+  "version": "1.0.0",
+  "description": "RMRK.app is an NFT system forced onto the Kusama blockchain",
+  "main": "index.js",
+  "repository": "https://github.com/swader/rmrk-web",
+  "author": "Bruno Skvorc <bruno@skvorc.me>",
+  "private": true,
+  "dependencies": {
+    "prettier": "^2.1.1"
+  }
+}
