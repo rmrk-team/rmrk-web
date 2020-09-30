@@ -115,3 +115,9 @@
 .pb-16 {
   padding-bottom: 4rem !important;
 }
+
+.topmenu p a {
+  display: inline-block;
+  border-right: 1px solid yellow;
+  padding: 10px;
+}
