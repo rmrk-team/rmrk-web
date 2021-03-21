@@ -41,12 +41,18 @@
     class="body overflow-x-hidden bg-pink antialaised text-pink text-lg font-mono leading-normal"
     x-bind:class="{ &#39;cursor-watch&#39;: waiting }"
   >
-  <div class="mx-4 lg:mx-16 text-yellow text-center xl:text-right py-4 lg:h-16 flex text-xs md:text-sm items-center justify-end topmenu">
-    <p><a href="https://github.com/Swader/rmrk-spec">Specs</a></p>
-    <p><a href="https://github.com/Swader/rmrk-tools">Tools</a></p>
-    <p><a href="http://t.me/rmrkapp">Telegram chat</a></p>
-    <p><a href="/app" onclick="alert('Coming soon!'); return false;">App</a></p>
-</div>
+    <div
+      class="mx-4 lg:mx-16 text-yellow text-center xl:text-right py-4 lg:h-16 flex text-xs md:text-sm items-center justify-end topmenu"
+    >
+      <p><a href="https://github.com/Swader/rmrk-spec">Specs</a></p>
+      <p><a href="https://github.com/Swader/rmrk-tools">Tools</a></p>
+      <p><a href="https://docs.rmrk.app">Docs</a></p>
+      <p><a href="http://t.me/rmrkapp">Telegram chat</a></p>
+      <p><a href="https://twitter.com/rmrkapp">Twitter</a></p>
+      <p><a href="https://news.nft.review">Newsletter</a></p>
+      <p><a href="mailto:hello@rmrk.app">Email us</a></p>
+      <p><a href="/app" onclick="alert('Coming soon!'); return false;">App</a></p>
+    </div>
     <img
       src="assets/canary-12.svg"
       class="absolute rad-head left-0 z-10 cursor-pointer"
@@ -59,7 +65,7 @@
         <div
           class="bg-pink mt-4 lg:mt-0 leading-none w-full text-center p-1 -rotate-3 text-3xl font-hand text-dark"
         >
-          Mint NFTs like a pro.
+          Smarts without smart contracts
         </div>
 
         <p class="mt-16 text-xl">
@@ -72,7 +78,10 @@
         class="max-w-lg mx-auto relative text-center button button-new"
         onclick="alert('Coming soon!');"
       >
-        <h2 class="font-headline text-5xl text-pink relative mb-6 hover:text-blue cursor-pointer">
+        <h2
+          id="appbutton"
+          class="font-headline text-5xl text-pink relative mb-6 hover:text-blue cursor-pointer"
+        >
           <svg
             class="hidden md:block absolute flip-x"
             style="top: 16px; left: 80px"
@@ -173,7 +182,11 @@
         <div class="max-w-lg mx-auto mt-16 text-xl content">
           <h2>What is RMRK.app?</h2>
           <p>
-            RMRK.app is a way to
+            RMRK.app is a part of
+            <a href="https://kusama.polkassembly.io/post/313" target="_blank"
+              >Kusama's broader NFT strategy</a
+            >
+            and a way to
             <em>abuse Kusama's system.remark extrinsic</em>
             <b
               ><a href="https://wiki.polkadot.network/docs/en/glossary#extrinsic" class="border-0"
@@ -181,32 +194,68 @@
               ></b
             >
             to write custom notes onto the chain in a
-            <em>standardized and structured way</em>.
+            <em>standardized and structured way</em>. Basically, we graffiti the chain. These notes
+            can represent NFTs, token sales, polls, collaborative drawing programs, even chat
+            applications (yes, really!).
+          </p>
+          <h2 id="services">Services</h2>
+          <h3 id="nfts">NFTs</h3>
+          <p>
+            Each NFT is part of a collection (think of collections like photo albums or "contexts"
+            that combine NFT's into one whole). Each collection and each member NFT have some
+            defined fields and metadata that can enrich their look, feel, and uniqueness.
+          </p>
+          <p><img src="/assets/eggs.jpg" alt="" /></p>
+          <p>
+            The first official NFT collection is
+            <a href="https://kanaria.rmrk.app">Kanaria</a>, Kusama's Canaries, a limited set of NFTs
+            represented as eggs from which different canaries will hatch after a certain block,
+            depending on randomness from the blockchain itself and some outside influence in the
+            form of emotes (reactions) to the NFTs.
           </p>
           <p>
-            Native NFTs are coming to Kusama through projects like
-            <a href="https://moonbeam.network">Moonbeam</a> and
-            <a href="https://devpost.com/software/unique-network">Unique</a>. But we want NFTs
-            <b>NOW</b>.
+            The RMRK team can help you launch your NFT project for a flat fee, or a percentage of
+            the sale's proceeds. If you'd like to explore options and talk to us about deploying
+            your own RMRK-based NFT distribution platform,
+            <a href="mailto:hello@rmrk.app">get in touch</a>.
+          </p>
+          <h3 id="polls">Polls</h3>
+          <p><img src="/assets/poll.png" alt="" /></p>
+          <p>
+            A poll can be declared and votes can be issued with chain remarks (special calls built
+            into the tool we've made for this purpose). Additional logic can be added to the
+            processing of these remarks so that poll results are processed differently based on
+            token holdings, user's past chain reputation, and other weighing algorithms, all without
+            needing a runtime upgrade or a smart contract.
+          </p>
+
+          <p>
+            The Web3 Foundation is using this approach to gauge sentiment behind the new
+            <a
+              href="https://decrypt.co/53325/leading-design-agency-koto-is-giving-polkadot-a-rebrand"
+              >Polkadot rebranding effort.</a
+            >
           </p>
           <p>
-            Each NFT is part of a collection. Each collection and each member NFT have some defined
-            fields and metadata that can enrich their look, feel, and uniqueness.
+            The RMRK team can help you launch your poll. If you'd like to explore options,
+            <a href="mailto:hello@rmrk.app">get in touch</a>.
           </p>
+          <h3 id="sales">Token sales (coming soon)</h3>
+          <p>
+            With RMRK, you can define a token sale and pre-allocate your project's token supply
+            based on people's investments without needing smart contracts.
+          </p>
+          <p>
+            While there is indeed no automated distribution mechanic, i.e. the team will have to
+            manually disperse tokens or build an interface for you to claim them, this trust factor
+            is irrelevant since in traditional smart-contract based token sales you also trust the
+            team to do something with the money and bring value to the token you purchased.
+          </p>
+          <h3>Making sense of Remarks</h3>
           <p>
             Because the <code>system.remark</code> is being abused to make this possible, extra care
             needs to be taken to properly read chain state and process only valid RMRK NFTs. More
             info in the <a href="#standards">standards section below</a>.
-          </p>
-          <h2>Is it live?</h2>
-          <p>
-            While it has been added to
-            <a href="https://kusama.polkassembly.io/post/313" target="_blank"
-              >Kusama's broader NFT strategy</a
-            >
-            you should still not use it for anything non-trivial and should absolutely consider it
-            "alpha". Sign up to the newsletter below to be notified when we launch new NFTs, new
-            standards, and new tools to interact with them.
           </p>
         </div>
       </div>
@@ -221,12 +270,13 @@
 
       <div class="px-4">
         <div class="max-w-lg mx-auto mt-16 text-xl content">
-          <h2>Standards</h2>
+          <h2 id="standards">Standards</h2>
           <p>
-            Standards exist to formalize the shape and form of remark-based NFTs. They're simple
-            JSON structures written according to some rules detailed in the
+            Standards exist to formalize the shape and form of remark-based NFTs and other types of
+            entities. They're simple JSON structures written according to some rules detailed in the
             <a href="https://github.com/swader/rmrk-spec" target="_blank">Specs Repo</a>. Here's an
-            example collection and an example NFT in that collection.
+            example collection and an example NFT in that collection. Find out more in the
+            <a href="https://docs.rmrk.app">Docs</a>.
           </p>
         </div>
       </div>
@@ -288,174 +338,28 @@
         </div>
         <div class="right-0 left-0 absolute -ml-8 lg:-ml-12 xl:-ml-16 hidden md:block"></div>
       </div>
-
       <div class="px-4">
-        <div class="max-w-lg mx-auto content md:mt-8 pb-16">
-          <h3>Collection and NFT Standards</h3>
+        <div class="max-w-lg mx-auto mt-16 text-xl content">
+          <h2 id="standards">What next?</h2>
           <p>
-            The definitions above are based on the RMRK0.1 standard. You can see this version of the
-            standard
-            <a
-              href="https://github.com/Swader/rmrk-spec/tree/master/standards/rmrk0.1"
-              target="_blank"
-              >on Github</a
-            >, or below. <br />
-            <br />
-            <span class="text-yellow">NFTs are part of collections</span>. NFTs and Collections are
-            broadly defined as <span class="text-yellow">"entities"</span>, while interactions
-            between them and the off-chain world are predictably called
-            <span class="text-yellow">"interactions"</span>. A game called "Zombie collector" can
-            have different NFTs inside it, like "Blue Zombie", "Red Zombie", etc. The "Garmin"
-            sports watch app can have different badges like "Midnight runner", "Long distance
-            swimmer", etc. Collections can also be used to sub-group NFTs: "Garmin - Swimming",
-            "Garmin - Running" and each collection can have its own issuer.
+            If you'd like to start implementing the RMRK standard, please consult the
+            <a href="docs.rmrk.app">docs</a>. If you're an artist or user and you'd just like to
+            start using RMRK to mint some NFTs, visit our <a href="#appbutton">app</a>. If you'd
+            like to hire the RMRK team to do a token sale or NFT launch for you, or you'd just like
+            to chat with us, send us an email via
+            <a href="mailto:hello@rmrk.app">hello@rmrk.app</a>!
           </p>
-          <dl>
-            <dt>
-              <a
-                href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/entities/collection.md"
-                class="border-0"
-                >Collection standard (click for details)</a
-              >
-            </dt>
-            <dd class="pb-16">
-              To issue an NFT, an issuer first needs to
-              <span class="text-yellow">declare a collection</span>. A collection has basic
-              attributes like the standard version used, so tools know how to process the NFTs, the
-              issuer, ID, and maximum number of NFTs ever to be minted in that collection, total.
-              Additionally, it can contain a link to its metadata which can contain an image,
-              attributes, URL, and description. Think of a collection as a
-              <em class="text-yellow">box of badges</em> labeled "My Boy Scout badges".
-            </dd>
-            <dt>
-              <a
-                href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/entities/nft.md"
-                class="border-0"
-                >NFT standard (click for details)</a
-              >
-            </dt>
-            <dd class="pb-16">
-              Once a collection has been issued, the issuer can mint NFTs inside that collection.
-              <span class="text-yellow">Each NFT is unique</span>. The NFT instance definition
-              contains its own attributes like name, whether or not it's transferable, and a link to
-              metadata. Think of an NFT like a badge in a box labeled "My Boy Scout badges".
-            </dd>
-
-            <dt>
-              <a
-                href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/entities/collection.md"
-                class="border-0"
-                >Collection Metadata standard (click for details)</a
-              >
-            </dt>
-            <dd class="pb-16">
-              <p>
-                A collection can have metadata in an off-chain location, preferably on IPFS. The
-                metadata contains a description, an image, an external URL on which to learn more,
-                and possibly attributes - descriptors that add uniqueness and rarity to NFTs.
-                <a
-                  target="_blank"
-                  href="https://ipfs.io/ipfs/QmVgs8P4awhZpFXhkkgnCwBp4AdKRj3F9K58mCZ6fxvn3j?filename=coll-meta.json"
-                  >Live example</a
-                >
-              </p>
-            </dd>
-
-            <dt>
-              <a
-                href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/entities/nft.md"
-                class="border-0"
-                >NFT Metadata standard (click for details)</a
-              >
-            </dt>
-            <dd class="pb-16">
-              <p>
-                An NFT can (and should!) have metadata in an off-chain location, preferably on IPFS.
-                The metadata contains a description, an image, an external URL on which to learn
-                more, and possibly attributes - descriptors that add uniqueness and rarity to NFTs.
-                It can also contain animation and YouTube video links for more meta info about the
-                NFT.
-                <a
-                  target="_blank"
-                  href="https://ipfs.io/ipfs/QmavoTVbVHnGEUztnBT2p3rif3qBPeCfyyUE5v4Z7oFvs4?filename=nft15-meta.json"
-                  >Live example</a
-                >
-              </p>
-            </dd>
-          </dl>
-
-          <h3>Interaction Standards</h3>
-          <p>
-            Interactions have their own extremely simple standard. Tools are expected to recognize
-            this standard, and discard abuse attempts. For example, no one is stopping a random user
-            from crafting a transaction that makes it seem like they sent someone an NFT they do not
-            own. The TX standard is there to formalize transfers according to data in the NFTs and
-            their Collections. We further document this in the
-            <a href="https://github.com/Swader/rmrk-spec/blob/master/implementers-guide.md"
-              >Implementer's Guide</a
-            >
-          </p>
-          <p>The following interactions currently exist:
-            <dl>
-              <dt><a href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/interactions/mint.md">MINT (click for standard)</a></dt>
-              <dd>Mints a collection of NFTs, priming your project for issuance. You will be issuing NFTs inside this collection.</dd>
-              <dt><a href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/interactions/mintnft.md">MINTNFT (click for standard)</a></dt>
-              <dd>Mints an NFT into an existing collection. Must respect the limits put in place by the collection, like issuer and max number of NFTs to issue.</dd>
-              <dt><a href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/interactions/list.md">LIST (click for standard)</a></dt>
-              <dd>Lists an NFT for sale for a specific price. The NFT is immediately available on-chain and can be purchased with a BUY interaction (see below).</dd>
-              <dt><a href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/interactions/buy.md">BUY (click for standard)</a></dt>
-              <dd>Buys an NFT listed for sale, provided enough funds were sent to complete the purchase. It is the buyer's responsibility to check for the exact price and not miss their mark, otherwise ownership will not be reassigned, but funds will still be sent. Piecemeal purchases aren't possible, so paying the difference would entail contacting the NFT owner and getting them to issue a SEND (see below).</dd>
-              <dt><a href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/interactions/consume.md">CONSUME (click for standard)</a></dt>
-              <dd>Burns an NFT, causing an application-specific effect. Consume a potion in-game, use up a coupon or concert ticket, or spend reputation on voting in a DAO.</dd>
-              <dt><a href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/interactions/changeissuer.md">CHANGEISSUER (click for standard)</a></dt>
-              <dd>Changes or relinquishes ownership of an NFT collection. Useful when selling a project, or even when you want to decentralize completely and prevent anyone from ever minting any more NFTs in that collection, causing provable scarcity.</dd>
-              <dt><a href="https://github.com/Swader/rmrk-spec/blob/master/standards/rmrk0.1/interactions/send.md">SEND (click for standard)</a></dt>
-              <dd>Sends an NFT to a recipient. See example below!</dd>
-              
-            </dl>
-          </p>
-
-          <h3>FAQ</h3>
-          <h4>Isn't this expensive?</h4>
-          <p>
-            A single send transaction costs around
-            <code class="text-yellow">0.005 KSM</code>, with a mint transaction going up to
-            <code class="text-yellow">0.01 KSM</code> maximum in our current experiments. There's
-            room for optimizing these costs further in future iterations of the standards.
-          </p>
-          <h4>Is this serious?</h4>
-          <p>
-            It's as serious as people want to take it. It was built as an experiment and hobby
-            project for
-            <a href="https://dotleap.com">DotLeap.com</a>, but if it gets a life of its own, great!
-          </p>
-          <h4>Any roadmap?</h4>
-          <p>Sure:</p>
-          <ul>
-            <li>
-              September 2020: <a href="https://github.com/swader/rmrk-spec" target="_blank" class="border-0" style="text-decoration: line-through !important;">Specs</a> go live so anyone can implement tooling.
-            </li>
-            <li>
-              October 2020: <a href="https://github.com/swader/rmrk-tools" target="_blank">Tools Suite</a> initial version.
-            </li>
-            <li>November 2020: First NFTs.</li>
-            <li>January 2021: 1.0.0 launch and tools go live for easy querying, indexing, minting, and sending NFTs, plus a basic integration of a wallet so people can <b class="text-yellow">easily</b> use RMRK</li>
-          </ul>
-          <h4>Any token sale?</h4>
-          <p>
-            Lol,
-            <a
-              href="https://ipfs.io/ipfs/QmZKaEGKxz136DFjS5L8b3rQQv9FcQfQqNnLWWVSmSNwtU?filename=6297e6338236ae7c63918500cfd1a647.jpg"
-              >nope</a
-            >.
-          </p>
-          <p>P.S. Join us <a href="http://t.me/rmrkapp">on telegram</a>.</p>
+          <br /><br /><br />
         </div>
       </div>
     </div>
+
     <div class="bg-dark text-white py-32 relative px-4">
       <div class="max-w-lg mx-auto mb-24 md:mb-48 relative text-center">
-        <h2 class="font-headline text-5xl text-pink relative mb-6 hover:text-blue cursor-pointer">
+        <h2
+          id="team"
+          class="font-headline text-5xl text-pink relative mb-6 hover:text-blue cursor-pointer"
+        >
           <svg
             class="hidden md:block absolute flip-x"
             style="top: 16px; left: 80px"
@@ -502,7 +406,7 @@
               </g>
             </g>
           </svg>
-          By
+          Team
           <svg
             class="hidden md:block absolute"
             style="top: 16px; right: 80px"
@@ -562,13 +466,70 @@
             at <a href="https://github.com/swader" class="font-headline text-pink">Github</a>.
           </blockquote>
           <div class="block w-full md:w-64">
-            <img src="assets/bruno.png" alt="Bruno's head" width="250" class="wiggle" />
+            <img src="assets/bruno2.jpg" alt="Bruno's head" width="250" class="wiggle" />
             <a
               href="https://bruno.id"
               class="block text-3xl italic font-bold mt-4 leading-none text-pink hover:text-white"
               >Bruno Škvorc</a
             >
             <a href="https://twitter.com/bitfalls" class="quote-title">@bitfalls</a>
+            <a href="https://github.com/swader" class="quote-title">github</a>
+          </div>
+        </div>
+        <div class="flex flex-wrap mb-24 md:mb-48">
+          <blockquote
+            class="relative z-10 md:order-last leading-relaxed mb-8 md:mt-16 text-2xl md:text-3xl flex-1 -rotate-3"
+          >
+            Fullstack developer with over 10 years of experience who wants to contribute to building
+            a better, safer and more decentralised web.
+          </blockquote>
+          <div class="block w-full md:w-64">
+            <img src="assets/yuri.jpg" alt="Yuri P's head" width="250" class="wiggle" />
+            <a
+              href="https://github.com/Yuripetusko"
+              class="block text-3xl italic font-bold mt-4 leading-none text-pink hover:text-white"
+              >Yuri Petusko</a
+            >
+            <a href="https://www.linkedin.com/in/yuri-petusko-92218614/" class="quote-title"
+              >linkedin</a
+            >
+            <a href="https://github.com/Yuripetusko" class="quote-title">github</a>
+          </div>
+        </div>
+        <div class="flex flex-wrap mb-24 md:mb-48">
+          <blockquote
+            class="relative z-10 md:order-last leading-relaxed mb-8 md:mt-16 text-2xl md:text-3xl flex-1 -rotate-3"
+          >
+            Tech head with almost a decade of experience in web development who's keen to contribute
+            in a bright decentralised future for all.
+          </blockquote>
+          <div class="block w-full md:w-64">
+            <img src="assets/yuri2.jpg" alt="Yuri G's head" width="250" class="wiggle" />
+            <a
+              href="https://github.com/abzen"
+              class="block text-3xl italic font-bold mt-4 leading-none text-pink hover:text-white"
+              >Yuri G.</a
+            >
+            <a href="https://github.com/abzen" class="quote-title">github</a>
+            <a href="https://www.linkedin.com/in/yurigii/" class="quote-title">linkedin</a>
+          </div>
+        </div>
+        <div class="flex flex-wrap mb-24 md:mb-48">
+          <blockquote
+            class="relative z-10 md:order-last leading-relaxed mb-8 md:mt-16 text-2xl md:text-3xl flex-1 -rotate-3"
+          >
+            Experienced multidisciplinary developer, creator and explorer with focus on delivering
+            high quality innovative solutions.
+          </blockquote>
+          <div class="block w-full md:w-64">
+            <img src="assets/ilia.png" alt="Ilia's head" width="250" class="wiggle" />
+            <a
+              href="https://github.com/ilionic"
+              class="block text-3xl italic font-bold mt-4 leading-none text-pink hover:text-white"
+              >Ilia</a
+            >
+            <a href="https://github.com/ilionic" class="quote-title">github</a>
+            <a href="https://soundcloud.com/nabionix" class="quote-title">soundcloud</a>
           </div>
         </div>
       </div>
