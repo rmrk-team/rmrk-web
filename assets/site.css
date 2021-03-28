@@ -121,3 +121,13 @@
   border-right: 1px solid yellow;
   padding: 10px;
 }
+
+.heads img {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid #000;
+  width: 13rem;
+  height: 13rem;
+  background-image: url("happy-face.jpg");
+  background-size: cover;
+}
